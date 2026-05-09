@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
-import { projects, skills, contact } from '../../portfolio'
+import { projects, skills, contact, education, experience, languages } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -19,6 +19,14 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+        {experience && experience.length ? (
+          <li className='nav__list-item'>
+            <a href='#experience' onClick={toggleNavList} className='link link--nav'>
+              Experience
+            </a>
+          </li>
+        ) : null}
+        
         {projects.length ? (
           <li className='nav__list-item'>
             <a
@@ -31,6 +39,14 @@ const Navbar = () => {
           </li>
         ) : null}
 
+        {languages && languages.length ? (
+          <li className='nav__list-item'>
+            <a href='#languages' onClick={toggleNavList} className='link link--nav'>
+              Languages
+            </a>
+          </li>
+        ) : null}
+
         {skills.length ? (
           <li className='nav__list-item'>
             <a
@@ -39,6 +55,18 @@ const Navbar = () => {
               className='link link--nav'
             >
               Skills
+            </a>
+          </li>
+        ) : null}
+
+        {education && education.length ? (
+          <li className='nav__list-item'>
+            <a
+              href='#education'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Education
             </a>
           </li>
         ) : null}

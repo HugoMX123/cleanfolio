@@ -1,5 +1,5 @@
 .skills__list {
-  max-width: 450px;
+  max-width: 900px;
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -9,4 +9,17 @@
 
 .skills__list-item {
   margin: 0.5em;
+}
+
+.skills__list-item {
+  margin: 0.5em;
+  border-radius: 2em;          /* fully pill-shaped */
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+}
+
+.skills__icon {
+  width: 1em;
+  height: 1em;
 }
