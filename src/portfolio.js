@@ -5,7 +5,6 @@ const header = {
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: 'Hugo Sosapavón Canseco',
   role: 'M.Sc. in Image Processing & Computer Vision',
   picture: 'cv.jpeg',
